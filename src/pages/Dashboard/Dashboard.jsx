@@ -1,16 +1,14 @@
-import AppLayout from "../../components/layout/AppLayout";
+import AppLayout from "@/components/layout/AppLayout";
+import DashboardHeader from "@/components/dashboard/DashboardHeader";
+import StatsGrid from "@/components/dashboard/StatsGrid";
 
 function Dashboard() {
   return (
     <AppLayout>
-      <div>
-        <h1 className="text-3xl font-bold text-slate-900">
-          Dashboard
-        </h1>
+      <div className="space-y-8">
+        <DashboardHeader />
 
-        <p className="mt-2 text-slate-500">
-          Welcome back! Here's an overview of your IT assets.
-        </p>
+        <StatsGrid />
       </div>
     </AppLayout>
   );
