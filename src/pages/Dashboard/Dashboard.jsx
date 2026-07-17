@@ -1,6 +1,7 @@
 import AppLayout from "@/components/layout/AppLayout";
 import DashboardHeader from "@/components/dashboard/DashboardHeader";
 import StatsGrid from "@/components/dashboard/StatsGrid";
+import DashboardContent from "@/components/dashboard/DashboardContent";
 
 function Dashboard() {
   return (
@@ -9,6 +10,8 @@ function Dashboard() {
         <DashboardHeader />
 
         <StatsGrid />
+
+        <DashboardContent />
       </div>
     </AppLayout>
   );
